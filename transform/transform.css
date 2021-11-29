@@ -1,7 +1,7 @@
 /* CSS VARIABLE */
 :root {
     --box-size: 50px;
-    --transform-animation: transform 2s ease-in 0s infinite both;
+    --transform-animation: transform 2s cubic-bezier(.62,.15,.4,.9) 0s infinite both;
 }
 
 .box {
