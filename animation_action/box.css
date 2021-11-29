@@ -18,15 +18,15 @@ body {
     border: 2px solid black;
     /* animation */
 
-    animation-delay: 1s;
+    /* animation-delay: 1s;
     animation-name: grow;
     animation-duration: 3s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-
+    animation-direction: alternate; */
+    animation-fill-mode: both;
     /* shorthand */
-    /* animation: grow 3s ease 0s infinite alternate; */
+    animation: grow 3s ease 0s infinite alternate;
 }
 
 @keyframes grow {
