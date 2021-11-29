@@ -1,0 +1,54 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10%;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+    border: 2px solid black;
+    /* animation */
+
+    animation-delay: 1s;
+    animation-name: grow;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    /* shorthand */
+    /* animation: grow 3s ease 0s infinite alternate; */
+}
+
+@keyframes grow {
+    50% {
+        width: 500px;
+        height: 150px;
+        background-color: lawngreen;
+    }
+
+    100% {
+        width: 300px;
+        height: 300px;
+        background-color: lightcoral;
+    }
+}
+
+@keyframes test {
+    from {
+        width: 50%;
+    }
+
+    to {
+        width: 150%;
+    }
+}
