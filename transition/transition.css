@@ -1,0 +1,20 @@
+.heading {
+    color: #000;
+    font-size: 1.2rem;
+    /* Transition */
+    transition-property: font-size;
+    transition-duration: 2s;
+    transition-delay: 0.014s; /* Delay 1s before transition start */
+    transition-timing-function: ease; /* Default is linear  */
+    /* Transition Shorthand */
+    /* transition: color 0.5s, font-size 1s; 
+        properties time-delay, e.g. color 0.2ms
+    */
+    transition: all 0.5s; 
+}
+
+.heading:hover {
+    color: green;
+    font-size: 2.0rem;
+    letter-spacing: 10px;
+}
