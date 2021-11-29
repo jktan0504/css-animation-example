@@ -1,13 +1,23 @@
+/* CSS VARIABLE */
+:root {
+    --box-size: 50px;
+    --transform-animation: transform 2s ease-in 0s infinite both;
+}
+
 .box {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: fixed;
-    width: 50px;
-    height: 50px;
+    width: var(--box-size);
+    height: var(--box-size);
     background-color: tomato;
     border: 2px solid black;
-    animation: transform 2s ease-in 0s infinite both;
+    animation: var(--transform-animation);
+    -webkit-animation: var(--transform-animation);
+    -moz-animation: var(--transform-animation);
+    -ms-animation: var(--transform-animation);
+    -o-animation: var(--transform-animation);
 }
 
 /* scale(2, 0.5)  */
