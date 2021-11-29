@@ -8,6 +8,12 @@
     background-color: tomato;
     border: 2px solid black;
     animation: transform 2s ease-in 0s infinite both;
+    /* added prefix - browsers */
+    /* -prefix-animation: transform 2s ease-in 0s infinite both; */
+    -webkit-animation: transform 2s ease-in 0s infinite both; /*  mobile */
+    -ms-animation: transform 2s ease-in 0s infinite both; /* microsoft */
+    -moz-animation: transform 2s ease-in 0s infinite both; /* mozilla */
+    -o-animation: transform 2s ease-in 0s infinite both; /* o */
 }
 
 /* scale(2, 0.5)  */
